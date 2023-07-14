@@ -16,7 +16,6 @@
     MainHeader,
     Presentation,
     Stats,
-    StatsCard,
     Tabs,
     Footer
   } from '../components'
