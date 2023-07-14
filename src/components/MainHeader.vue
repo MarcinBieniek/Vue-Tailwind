@@ -1,3 +1,3 @@
 <template>
-  <section>This is header</section>
+  <section class="bg-customBlue">This is header</section>
 </template>
