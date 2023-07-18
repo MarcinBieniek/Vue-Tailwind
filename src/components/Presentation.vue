@@ -15,16 +15,9 @@
 </template>
 
 <script>
+import GeneralMixin from '../mixins/generalMixin';
 export default {
-  props: {
-    content: {
-      default: () => {},
-      type: Object
-    }
-  },
-  setup(props) {
-    props.content
-  }
+  mixins: [GeneralMixin]
 }
 
 </script>
