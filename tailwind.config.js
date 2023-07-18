@@ -14,7 +14,7 @@ module.exports = {
       serif: ['Merriweather', 'serif']
     },
     extend: {
-      '128': '10px',
+      '128': '32rem',
     },
   },
   variants: {
