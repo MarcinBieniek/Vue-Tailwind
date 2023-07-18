@@ -1,5 +1,5 @@
 <template>
-  <section class="Stats-Card flex flex-col items-center text-black text-center bg-white p-16 mb-8 shadow-lg">
+  <section class="Stats-Card flex flex-col items-center text-black text-center bg-white p-16 shadow-lg mb-8">
     <img class="h-16 mb-8" :src="content.imgSrc" :alt="content.title" />
     <h2 class="text-lg mb-2 font-light">{{ content.title }}</h2>
     <p class="font-bold" v-html="content.description" />

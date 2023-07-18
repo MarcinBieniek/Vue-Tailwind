@@ -1,5 +1,5 @@
 <template>
-  <section class="Stats bg-cover bg-no-repeat bg-center relative py-8 lg:pt-32" :style="`background-image:url(${PorscheBackgroundBlue}); min-height: 300px`">
+  <section class="Stats bg-cover bg-no-repeat bg-center relative py-8 lg:pt-32 mb-20 lg:mb-60" :style="`background-image:url(${PorscheBackgroundBlue}); min-height: 300px`">
     <div class="w-full h-full bg-customBlue opacity-75 absolute top-0 left-0 z-0" />
     <div class="Stats-Components flex flex-col lg:flex-row items-center justify-between w-full z-50 relative lg:absolute px-8">
       <StatsCart v-for="obj, objIndex in cards" :key="objIndex" :content="obj"/>
