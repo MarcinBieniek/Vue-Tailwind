@@ -1,5 +1,5 @@
 <template>
-  <section class="Presentation flex flex-col md:flex-row flex-row" :class="{ 'md:flex-row-reverse': content.left }">
+  <section data-aos="fade-up" data-aos-duration="1000" class="Presentation flex flex-col md:flex-row flex-row" :class="{ 'md:flex-row-reverse': content.left }">
     <div v-for="col, colIndex in content.columns" :key="colIndex" class="flex-1">
       <div v-if="col.imgSrc" :style="`background-image:url(${col.imgSrc}); min-height: 300px`" class="h-full bg-cover bg-center"></div>
       <div v-else class="p-8 md:p-24" :class="`bg-${col.backgroundColor} text-${ content.left ? 'black' : 'white'}`">
@@ -16,8 +16,16 @@
 
 <script>
 import GeneralMixin from '../mixins/generalMixin';
+import { onMounted } from "vue";
+import AOS from "aos";
+
 export default {
-  mixins: [GeneralMixin]
+  mixins: [GeneralMixin],
+  setup() {
+    onMounted(() => {
+      AOS.init()
+    })
+  }
 }
 
 </script>

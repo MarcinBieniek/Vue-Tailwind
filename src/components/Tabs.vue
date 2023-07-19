@@ -1,5 +1,5 @@
 <template>
-  <section class="Tabs">
+  <section class="Tabs" data-aos="fade-up" data-aos-duration="1000">
     <header class="flex flex-row items-center justify-center mb-4">
       <div
         v-for="obj, objIndex in tabs" :key="objIndex"
@@ -20,11 +20,15 @@
 </template>
 
 <script>
-import { reactive, toRefs, computed } from 'vue';
+import { reactive, toRefs, computed, onMounted } from 'vue';
 import Inside from '../assets/inside.jpg';
+import AOS from "aos";
 
 export default {
   setup(){
+    onMounted(() => {
+      AOS.init()
+    });
     const data = reactive({
       activeTab: 0,
       getActiveTabComponent: computed(() => {

@@ -1,5 +1,5 @@
 <template>
-  <section class="Stats bg-cover bg-no-repeat bg-center relative py-8 lg:pt-32 mb-20 lg:mb-60" :style="`background-image:url(${PorscheBackgroundBlue}); min-height: 300px`">
+  <section data-aos="fade-up" data-aos-duration="1000" class="Stats bg-cover bg-no-repeat bg-center relative py-8 lg:pt-32 mb-20 lg:mb-60" :style="`background-image:url(${PorscheBackgroundBlue}); min-height: 300px`">
     <div class="w-full h-full bg-customBlue opacity-75 absolute top-0 left-0 z-0" />
     <div class="Stats-Components flex flex-col lg:flex-row items-center justify-between w-full z-50 relative lg:absolute px-8">
       <StatsCart v-for="obj, objIndex in cards" :key="objIndex" :content="obj"/>
@@ -9,19 +9,23 @@
 
 <script>
 
-import { reactive, toRefs } from 'vue';
+import { reactive, toRefs, onMounted } from 'vue';
 import PorscheBackgroundBlue from '../assets/porsche-taycan-bluebg.jpg';
 import Plug from '../assets/icons/energy.png';
 import Size from '../assets/icons/box.png';
 import Speed from '../assets/icons/speedometer.png'
 import Weight from '../assets/icons/weight.png';
 import StatsCart from './StatsCard.vue';
+import AOS from "aos";
 
 export default {
   components: {
     StatsCart
   },
   setup() {
+    onMounted(() => {
+      AOS.init()
+    });
     const data = reactive({
       PorscheBackgroundBlue,
       cards: [
