@@ -5,19 +5,20 @@
     <Presentation v-for="obj, objIndex in presentations" :key="objIndex" :content="obj"/>
     <Stats />
     <Tabs />
+    <Footer />
   </div>
 </template>
 
 <script>
 
-  import { Nav, MainHeader, Presentation, Stats, Tabs } from '../components'
+  import { Nav, MainHeader, Presentation, Stats, Tabs, Footer } from '../components'
   import { reactive, toRefs } from 'vue';
   import PorscheInterior from '../assets/taycan-interior.jpeg'
   import PorscheTaycan from '../assets/porsche-taycan.webp'
 
   export default {
     components: {
-      Presentation, MainHeader, Nav, Stats, Tabs
+      Presentation, MainHeader, Nav, Stats, Tabs, Footer
     },
     setup() {
 
