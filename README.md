@@ -1,29 +1,28 @@
-# car-service
+## Description
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple landing page project for an automotive service. Built using Vue 3 and Tailwind. Additionally, I tested and incorporated the Animate.css animation library into the project.
 
-## Recommended IDE Setup
+## Demo
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Live demo: [https://jolly-jelly-338a89.netlify.app](https://jolly-jelly-338a89.netlify.app)
 
-## Customize configuration
+Thank you for taking your time and checking out my project.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Running the app
 
-## Project Setup
+```bash
+# development
+$ npm run dev
 
-```sh
-npm install
+# preview
+$ npm run preview
+
+# build
+$ npm run build
 ```
 
-### Compile and Hot-Reload for Development
+## Stay in touch
 
-```sh
-npm run dev
-```
+Author - [Marcin Bieniek](https://www.linkedin.com/in/marcin-bieniek-617565271/)
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Portfolio - [marcindev.netlify.app](https://marcindev.netlify.app/)
