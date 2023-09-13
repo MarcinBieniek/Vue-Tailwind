@@ -8,6 +8,14 @@ Live demo: [https://jolly-jelly-338a89.netlify.app](https://jolly-jelly-338a89.n
 
 Thank you for taking your time and checking out my project.
 
+## Installation
+
+Clone the repository to your computer:
+git clone https://github.com/MarcinBieniek/Vue-Tailwind.git
+
+Install all dependencies:
+npm install
+
 ## Running the app
 
 ```bash
